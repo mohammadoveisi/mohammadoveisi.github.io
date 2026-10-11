@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Mohammad Oveisi</title>
+  <meta name="description" content="Research projects of Mohammad Oveisi: mm-wave and sub-THz receivers, low-jitter phase-locked loops, clock and data recovery, and transceiver link modeling.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Mohammad Oveisi</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="resume.html">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Research</h1>
+    <p class="lead">I design RF, analog, and mixed-signal integrated circuits and carry them from system-level modeling through transistor-level design, layout, tape-out, and silicon measurement. My Ph.D. research in the <a href="https://ncic.eng.uci.edu/">NCIC Labs</a> at UC Irvine, advised by Prof. Payam Heydari, covers the projects below.</p>
+
+    <article class="project">
+      <h3>Antenna-to-Bits F-Band 120-Gbps 64-QAM CMOS Receiver</h3>
+      <p class="meta">22-nm FD-SOI · JSSC 2026, VLSI 2025</p>
+      <p>A fully integrated 100–140-GHz receiver that takes the signal from the antenna to the output bitstream and supports QPSK, 16-QAM, and 64-QAM. I developed the analog-domain 64-QAM detection and bit-extraction circuits, which remove the need for power-hungry high-speed ADCs and DSP. The receiver demonstrated a 120-Gbps wireless link over 15 cm at −17.2-dB EVM, with 32-dB peak conversion gain, 9.5-dB minimum noise figure, and 230-mW power consumption in a 7.5-mm² die. The work was featured by <a href="https://news.uci.edu/2026/01/22/uc-irvine-engineers-invent-wireless-transceiver-rivaling-fiber-optic-speed/">UC Irvine News</a>, the University of California, and EurekAlert! (AAAS).</p>
+    </article>
+
+    <article class="project">
+      <h3>Ultra-Wideband Low-Jitter Ring-VCO Phase-Locked Loop</h3>
+      <p class="meta">Manuscript under review · Patent pending</p>
+      <p>A compact ring-VCO charge-pump PLL with a phase-domain dynamic-feedback architecture that suppresses both reference- and VCO-induced phase noise across a multi-octave tuning range. I carried out the full flow: MATLAB loop and phase-noise modeling, transistor-level design, layout and post-layout verification, PCB design, and silicon measurement. Measured results will be posted after publication.</p>
+    </article>
+
+    <article class="project">
+      <h3>20-Gb/s Half-Rate Clock and Data Recovery</h3>
+      <p class="meta">22-nm FD-SOI</p>
+      <p>A low-power half-rate CDR with a linear phase detector, duty-cycle correction, and a 10-GHz clock path, consuming 15 mW in total. It includes a 7-bit capacitor-bank LC VCO tuning 9.3–10.8 GHz at about 8 mW, and achieved 452-fs integrated RMS random jitter.</p>
+    </article>
+
+    <article class="project">
+      <h3>Power-Efficient 90–130-GHz Receiver Front End</h3>
+      <p class="meta">22-nm FD-SOI · IMS 2024</p>
+      <p>A wideband front end with a five-stage stagger-tuned LNA, down-conversion mixer, baseband amplifier, and on-chip frequency tripler. The current-reusing complementary (inverter-based) LNA with CPW interstage matching is the first reported inverter-based LNA above 100 GHz, with 14.8-dB gain, 35-GHz bandwidth, and 6.5-dB minimum noise figure at 7.5 mW.</p>
+    </article>
+
+    <article class="project">
+      <h3>Millimeter-Wave RF-QAM Transmitter Architecture</h3>
+      <p class="meta">TCAS-I 2023 (2024 Darlington Best Paper Award), ISCAS 2023</p>
+      <p>A transmitter that synthesizes high-order QAM directly in the RF domain by vector-summing binary-scaled QPSK signals. This eliminates the high-speed DAC and relaxes power-amplifier linearity requirements, two of the largest power costs in millimeter-wave transmitters.</p>
+    </article>
+
+    <article class="project">
+      <h3>Transceiver Link Modeling and RF Specification Budgeting</h3>
+      <p class="meta">TCAS-I 2022, OJ-CAS 2023, ISCAS 2025</p>
+      <p>Analytical models of BER, EVM, and out-of-band-emission degradation caused by PLL jitter and reference spurs, link noise, circuit nonlinearity, and bandwidth limits. The models give phase-noise and linearity budgets for PLLs and power amplifiers that meet a target spectral emission mask, and a closed-form optimum PA output power that minimizes BER in QAM links, validated for 16-, 64-, and 256-QAM.</p>
+    </article>
+
+    <p>Full citations are on the <a href="publications.html">Publications</a> page.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Mohammad Oveisi</span>
+      <span>Updated October 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
