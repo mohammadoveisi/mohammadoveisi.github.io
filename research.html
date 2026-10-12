@@ -62,16 +62,23 @@
       </div>
     </article>
 
-    <article class="project" id="cdr">
+    <article class="project has-figure" id="cdr">
+      <figure>
+        <img src="assets/cdr-schematic.jpg" alt="Circuit schematic of the linear half-rate CDR: duty-cycle-corrected data and clock buffers, a phase detector built from four D-latches and two XOR gates, the charge pump and loop filter, and the LC VCO with a 7-bit capacitor bank" width="900" height="662" loading="lazy">
+        <figcaption>Schematic of the linear half-rate CDR. From Hassan et al., JSSC 2026. © IEEE.</figcaption>
+      </figure>
       <div>
         <h2>20-Gb/s Half-Rate Clock and Data Recovery</h2>
-        <p class="meta">22-nm FD-SOI</p>
+        <p class="meta">22-nm FD-SOI · JSSC 2026</p>
         <ul class="metrics" aria-label="Headline results">
           <li>20 Gb/s</li>
-          <li>452-fs RMS jitter</li>
+          <li>452-fs RMS jitter (simulated)</li>
           <li>15 mW</li>
         </ul>
-        <p>A low-power half-rate CDR with a linear phase detector, duty-cycle correction, and a 10-GHz clock path, consuming 15 mW in total. It includes a 7-bit capacitor-bank LC VCO tuning 9.3–10.8 GHz at about 8 mW, and achieved 452-fs integrated RMS random jitter.</p>
+        <p>The clock-recovery block of the <a href="#receiver">120-Gbps receiver</a>: a low-power half-rate CDR with a linear phase detector, duty-cycle correction, and a 10-GHz clock path, consuming 15 mW in total. It includes a 7-bit capacitor-bank LC VCO tuning 9.3–10.8 GHz at about 8 mW. The simulated integrated RMS random jitter is 452 fs.</p>
+        <ul class="project-links">
+          <li><a href="https://doi.org/10.1109/JSSC.2025.3648748">JSSC 2026 paper</a></li>
+        </ul>
       </div>
     </article>
 
