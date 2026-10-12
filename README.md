@@ -4,11 +4,12 @@ Static site for GitHub Pages. Plain HTML and CSS, no build step.
 
 | File | Page |
 | --- | --- |
-| `index.html` | Home: bio, at a glance, news |
-| `research.html` | Research projects |
+| `index.html` | Home: hero, at a glance, featured work, selected publications, news, about |
+| `research.html` | Research project cards (anchors are linked from Home and Publications) |
 | `publications.html` | Publications, patents, theses |
 | `resume.html` | Résumé |
 | `assets/style.css` | Shared styles (light and dark) |
+| `assets/social-card.png` | Link-preview image (`og:image`), 1200×630 |
 
 ## Preview locally
 

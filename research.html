@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Mohammad Oveisi</title>
   <meta name="description" content="Research projects of Mohammad Oveisi: mm-wave and sub-THz receivers, low-jitter phase-locked loops, clock and data recovery, and transceiver link modeling.">
+  <link rel="canonical" href="https://mohammadoveisi.github.io/research.html">
+  <meta property="og:title" content="Research | Mohammad Oveisi">
+  <meta property="og:image" content="https://mohammadoveisi.github.io/assets/social-card.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -26,40 +29,93 @@
     <h1>Research</h1>
     <p class="lead">I design RF, analog, and mixed-signal integrated circuits and carry them from system-level modeling through transistor-level design, layout, tape-out, and silicon measurement. My Ph.D. research in the <a href="https://ncic.eng.uci.edu/">NCIC Labs</a> at UC Irvine, advised by Prof. Payam Heydari, covers the projects below.</p>
 
-    <article class="project">
-      <h3>Antenna-to-Bits F-Band 120-Gbps 64-QAM CMOS Receiver</h3>
-      <p class="meta">22-nm FD-SOI · JSSC 2026, VLSI 2025</p>
-      <p>A fully integrated 100–140-GHz receiver that takes the signal from the antenna to the output bitstream and supports QPSK, 16-QAM, and 64-QAM. I developed the analog-domain 64-QAM detection and bit-extraction circuits, which remove the need for power-hungry high-speed ADCs and DSP. The receiver demonstrated a 120-Gbps wireless link over 15 cm at −17.2-dB EVM, with 32-dB peak conversion gain, 9.5-dB minimum noise figure, and 230-mW power consumption in a 7.5-mm² die. The work was featured by <a href="https://news.uci.edu/2026/01/22/uc-irvine-engineers-invent-wireless-transceiver-rivaling-fiber-optic-speed/">UC Irvine News</a>, the University of California, and EurekAlert! (AAAS).</p>
+    <article class="project" id="receiver">
+      <div>
+        <h2>Antenna-to-Bits F-Band 120-Gbps 64-QAM CMOS Receiver</h2>
+        <p class="meta">22-nm FD-SOI · JSSC 2026, VLSI 2025</p>
+        <ul class="metrics" aria-label="Measured results">
+          <li>120 Gb/s</li>
+          <li>64-QAM</li>
+          <li>230 mW</li>
+          <li>100–140 GHz</li>
+        </ul>
+        <p>A fully integrated receiver that takes the signal from the antenna to the output bitstream and supports QPSK, 16-QAM, and 64-QAM. In measurement it demonstrated a 120-Gbps wireless link over 15 cm at −17.2-dB EVM, with 32-dB peak conversion gain and 9.5-dB minimum noise figure in a 7.5-mm² die. The work was featured by <a href="https://news.uci.edu/2026/01/22/uc-irvine-engineers-invent-wireless-transceiver-rivaling-fiber-optic-speed/">UC Irvine News</a>, the University of California, and EurekAlert! (AAAS).</p>
+        <p class="role"><strong>My contribution:</strong> the analog-domain 64-QAM detection and bit-extraction circuits, which remove the need for power-hungry high-speed ADCs and DSP.</p>
+        <ul class="project-links">
+          <li><a href="https://doi.org/10.1109/JSSC.2025.3648748">JSSC 2026 paper</a></li>
+          <li><a href="https://doi.org/10.23919/VLSITechnologyandCir65189.2025.11075138">VLSI 2025 paper</a></li>
+          <li><a href="https://news.uci.edu/2026/01/22/uc-irvine-engineers-invent-wireless-transceiver-rivaling-fiber-optic-speed/">UC Irvine News</a></li>
+        </ul>
+      </div>
     </article>
 
-    <article class="project">
-      <h3>Ultra-Wideband Low-Jitter Ring-VCO Phase-Locked Loop</h3>
-      <p class="meta">Manuscript under review · Patent pending</p>
-      <p>A compact ring-VCO charge-pump PLL with a phase-domain dynamic-feedback architecture that suppresses both reference- and VCO-induced phase noise across a multi-octave tuning range. I carried out the full flow: MATLAB loop and phase-noise modeling, transistor-level design, layout and post-layout verification, PCB design, and silicon measurement. Measured results will be posted after publication.</p>
+    <article class="project" id="pll">
+      <div>
+        <h2>Ultra-Wideband Low-Jitter Ring-VCO Phase-Locked Loop</h2>
+        <p class="meta">Manuscript under review · Patent pending</p>
+        <p>A compact ring-VCO charge-pump PLL with a phase-domain dynamic-feedback architecture that suppresses both reference- and VCO-induced phase noise across a multi-octave tuning range. Measured results will be posted after publication.</p>
+        <p class="role"><strong>My contribution:</strong> the full flow, from MATLAB loop and phase-noise modeling through transistor-level design, layout and post-layout verification, PCB design, and silicon measurement.</p>
+      </div>
     </article>
 
-    <article class="project">
-      <h3>20-Gb/s Half-Rate Clock and Data Recovery</h3>
-      <p class="meta">22-nm FD-SOI</p>
-      <p>A low-power half-rate CDR with a linear phase detector, duty-cycle correction, and a 10-GHz clock path, consuming 15 mW in total. It includes a 7-bit capacitor-bank LC VCO tuning 9.3–10.8 GHz at about 8 mW, and achieved 452-fs integrated RMS random jitter.</p>
+    <article class="project" id="cdr">
+      <div>
+        <h2>20-Gb/s Half-Rate Clock and Data Recovery</h2>
+        <p class="meta">22-nm FD-SOI</p>
+        <ul class="metrics" aria-label="Headline results">
+          <li>20 Gb/s</li>
+          <li>452-fs RMS jitter</li>
+          <li>15 mW</li>
+        </ul>
+        <p>A low-power half-rate CDR with a linear phase detector, duty-cycle correction, and a 10-GHz clock path, consuming 15 mW in total. It includes a 7-bit capacitor-bank LC VCO tuning 9.3–10.8 GHz at about 8 mW, and achieved 452-fs integrated RMS random jitter.</p>
+      </div>
     </article>
 
-    <article class="project">
-      <h3>Power-Efficient 90–130-GHz Receiver Front End</h3>
-      <p class="meta">22-nm FD-SOI · IMS 2024</p>
-      <p>A wideband front end with a five-stage stagger-tuned LNA, down-conversion mixer, baseband amplifier, and on-chip frequency tripler. The current-reusing complementary (inverter-based) LNA with CPW interstage matching is the first reported inverter-based LNA above 100 GHz, with 14.8-dB gain, 35-GHz bandwidth, and 6.5-dB minimum noise figure at 7.5 mW.</p>
+    <article class="project" id="front-end">
+      <div>
+        <h2>Power-Efficient 90–130-GHz Receiver Front End</h2>
+        <p class="meta">22-nm FD-SOI · IMS 2024</p>
+        <ul class="metrics" aria-label="LNA results">
+          <li>14.8-dB gain</li>
+          <li>35-GHz bandwidth</li>
+          <li>6.5-dB NF</li>
+          <li>7.5 mW</li>
+        </ul>
+        <p>A wideband front end with a five-stage stagger-tuned LNA, down-conversion mixer, baseband amplifier, and on-chip frequency tripler. The current-reusing complementary (inverter-based) LNA with CPW interstage matching is the first reported inverter-based LNA above 100 GHz, with 14.8-dB gain, 35-GHz bandwidth, and 6.5-dB minimum noise figure at 7.5 mW.</p>
+        <ul class="project-links">
+          <li><a href="https://doi.org/10.1109/IMS40175.2024.10600407">IMS 2024 paper</a></li>
+        </ul>
+      </div>
     </article>
 
-    <article class="project">
-      <h3>Millimeter-Wave RF-QAM Transmitter Architecture</h3>
-      <p class="meta">TCAS-I 2023 (2024 Darlington Best Paper Award), ISCAS 2023</p>
-      <p>A transmitter that synthesizes high-order QAM directly in the RF domain by vector-summing binary-scaled QPSK signals. This eliminates the high-speed DAC and relaxes power-amplifier linearity requirements, two of the largest power costs in millimeter-wave transmitters.</p>
+    <article class="project" id="rf-qam">
+      <div>
+        <h2>Millimeter-Wave RF-QAM Transmitter Architecture</h2>
+        <p class="meta">TCAS-I 2023, ISCAS 2023</p>
+        <ul class="metrics" aria-label="Recognition">
+          <li>2024 Darlington Best Paper Award</li>
+          <li>TCAS-I issue highlight</li>
+        </ul>
+        <p>A conventional transmitter generates QAM at baseband with high-speed DACs and then needs a highly linear power amplifier to preserve it. This architecture instead synthesizes high-order QAM directly in the RF domain by vector-summing binary-scaled QPSK signals. That eliminates the high-speed DAC and relaxes power-amplifier linearity requirements, two of the largest power costs in millimeter-wave transmitters.</p>
+        <ul class="project-links">
+          <li><a href="https://doi.org/10.1109/TCSI.2023.3255109">TCAS-I 2023 paper</a></li>
+          <li><a href="https://doi.org/10.1109/ISCAS46773.2023.10182203">ISCAS 2023 paper</a></li>
+          <li><a href="https://ieee-cas.org/post/news/announcing-ieee-cass-2024-award-winners">Award announcement</a></li>
+        </ul>
+      </div>
     </article>
 
-    <article class="project">
-      <h3>Transceiver Link Modeling and RF Specification Budgeting</h3>
-      <p class="meta">TCAS-I 2022, OJ-CAS 2023, ISCAS 2025</p>
-      <p>Analytical models of BER, EVM, and out-of-band-emission degradation caused by PLL jitter and reference spurs, link noise, circuit nonlinearity, and bandwidth limits. The models give phase-noise and linearity budgets for PLLs and power amplifiers that meet a target spectral emission mask, and a closed-form optimum PA output power that minimizes BER in QAM links, validated for 16-, 64-, and 256-QAM.</p>
+    <article class="project" id="link-modeling">
+      <div>
+        <h2>Transceiver Link Modeling and RF Specification Budgeting</h2>
+        <p class="meta">TCAS-I 2022, OJ-CAS 2023, ISCAS 2025</p>
+        <p>Analytical models of BER, EVM, and out-of-band-emission degradation caused by PLL jitter and reference spurs, link noise, circuit nonlinearity, and bandwidth limits. The models give phase-noise and linearity budgets for PLLs and power amplifiers that meet a target spectral emission mask, and a closed-form optimum PA output power that minimizes BER in QAM links, validated for 16-, 64-, and 256-QAM.</p>
+        <ul class="project-links">
+          <li><a href="https://doi.org/10.1109/TCSI.2022.3172707">TCAS-I 2022 paper</a></li>
+          <li><a href="https://doi.org/10.1109/OJCAS.2023.3328871">OJ-CAS 2023 paper</a></li>
+          <li><a href="https://doi.org/10.1109/ISCAS56072.2025.11043581">ISCAS 2025 paper</a></li>
+        </ul>
+      </div>
     </article>
 
     <p>Full citations are on the <a href="publications.html">Publications</a> page.</p>
